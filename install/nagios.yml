@@ -4,7 +4,7 @@
   gather_facts: yes
   remote_user: "{{ ansible_system_user }}"
   roles:
-    - { role: nagios-client }
+    - { role: nagios-node01 }
     - { role: firewall_client, when: manage_firewall_client }
 
 # role for nagios server
